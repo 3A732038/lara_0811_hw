@@ -16,3 +16,4 @@ Route::get('/',function (){
    return view('home');
 });
 Route::get('/about', [\App\Http\Controllers\AboutController::class,'index']);
+Route::get('/news', [\App\Http\Controllers\newsController::class,'index']);

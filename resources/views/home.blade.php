@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>home</title>
+        <title>首頁</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,6 +21,12 @@
         </style>
     </head>
     <body class="antialiased">
+    <a href="/news" class="ml-1 underline">
+        前往news頁面
+    </a>
+    <a href="/about" class="ml-1 underline">
+        前往about頁面
+    </a>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -118,9 +124,6 @@
 
                             <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
                                 Sponsor
-                            </a>
-                            <a href="{{route('/about')}}" class="ml-1 underline">
-                               前往about頁面
                             </a>
                         </div>
                     </div>
